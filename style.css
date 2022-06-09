@@ -1,0 +1,81 @@
+.logo{position:fixed; top: 8%; left: 15%; z-index: 12212;}
+.menu{position: fixed; top: 8%; right: 30%; width: 50%; margin: 0 auto;
+z-index: 1222; display: flex; justify-content: flex-end; align-items: center;}
+.size{width: 160px;}
+.menu .sns{display: flex;}
+.menu .sns li{margin: 12px;}
+.scroll{position: fixed; bottom: 2%; z-index: 2121; left: 50%; transform: translateX(-50%);}
+
+.section {
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+}
+
+.section-main {
+    background: url(./img/cake.jpg);
+    background-size: cover ;
+}
+
+.section p{color: #fff; position: absolute; left: 15%; bottom: 30%; text-align: justify;} 
+.section span{color: rgba(255, 255, 255, 0.759);position: absolute; left: 15%; bottom: 24%;text-align: justify;}
+
+.rdbtn{width: 200px;position: absolute; top: 0; right: 0;}
+
+.store{display: flex;position: absolute;bottom: 10%;left: 15%; }
+.section-main .dang{width: 390px; height: 270px; position: absolute; left: 15%; }
+.download{color: #fff; font-weight: bold; position: absolute; left: 16%; bottom: 24%;}
+.store li{background-color: #fff;width: 180px; height: 60px; margin: 10px;border: 1px solid #fff;border-radius: 30px; }
+.store .appstore{background: url(./img/img-appstore-default@2x.png) no-repeat; background-size: contain; z-index: 1212;width: 150px; height: 40px;border: none;position: absolute; top: 50%; transform: translateY(-50%); left: 7%;}
+.store .google{background: url(./img/img-googleplay-default@2x.png) no-repeat; background-size: contain; z-index: 1212;width: 150px; height: 40px; border: none; position: absolute; top: 50%; transform: translateY(-50%); left: 57%;}
+
+.qrtxt{color: #fff; font-weight: bold; position: absolute; right: 21%; bottom: 24%;}
+.qr-back{background-color: #fff; width: 140px; height: 140px; border: 1px solid transparent; border-radius: 20px;position: absolute; right: 20%; bottom: 20px;}
+.qr{background: url(./img/qrcode@3x.png) no-repeat;background-size: contain;z-index: 1212; width: 140px; height: 140px; border:none;}
+
+.section {
+    background-color: #2AC1BC;
+}
+
+.road{background: url(./img/img-road@2x.png) no-repeat; background-size: contain; right: 15%; width: 100%; height: 100%; position: absolute; left:43% ; }
+.section .txtimg{position: absolute; left: 15%; top: 30%;
+width: auto; height: 230px;}
+
+.section .subimg{width: auto; height: 600px;
+position: absolute; }
+
+#menuBar{z-index: 121212; position: absolute; right: 8%; top: 50%; transform: translateY(-50%);}
+
+
+#menuBar #gnb li:first-child{display: none;}
+#menuBar #gnb li:last-child{display: none;}
+#menuBar #gnb li{margin-top: 10px;}
+
+
+#menuBar #gnb li{background:url(img/dotScroll02@2x.png) no-repeat;width: 30px; height: 30px; background-size: cover; }
+#menuBar #gnb li.active{background:url(img/dotSelect@2x.png) no-repeat;display: block; width: 30px; height: 30px; background-size: cover;} 
+
+.bike{bottom: 200px; right:27% ;}
+.bike.on{bottom: 0px;right: 15%; transition: all linear 0.5s;}
+
+.people{bottom: -350px;}
+.people.on{bottom: 0;transition: all linear 0.3s;}
+
+.present{bottom:  -350px;}
+.present.on{bottom: 0;transition: all linear 0.3s;right: 15%;}
+
+.shopping{bottom:  -350px;}
+.shopping.on{bottom: 0;transition: all linear 0.3s;right: 15%;}
+
+.flag{bottom:  -400px;}
+.flag.on{bottom: 0;transition: all linear 0.3s;right: 15%;}
+
+.bmart{right: 0;opacity: 0;}
+.bmart.on{right: 30%;opacity: 1;transition: all linear 0.3s}
+
+.fp-watermark{display: none;}
+
+.app.off, #gnb.off{opacity: 0;}
+.app, #gnb{opacity: 1;transition: all linear 0.1s}
+
+#gnb li a{width: 24px;height: 24px; display: block;}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/vendors/easings.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js'></script>
+</head>
+
+<style>
+    @import url(reset.css);
+    @import url(style.css);
+</style>
+
+<body>
+    <h1 class='logo'><img class='size' src="./img/logo@2x.png" alt=""></h1>
+    <div class='menu'>
+        <div class="app"><img class='size' src="./img/btn-download-white@3x.png" alt="" height='55px'></div>
+        <ul class='sns'>
+            <li><a href=""><img src="./img/iconfacebook@2x.png" alt=""></a></li>
+            <li><a href=""><img src="./img/iconinstagram@2x.png" alt=""></a></li>
+            <li><a href=""><img src="./img/iconblog@2x.png" alt=""></a></li>
+            <li><a href=""><img src="./img/iconyoutube@2x.png" alt=""></a></li>
+        </ul>
+    </div>
+    <h1 class='scroll'><img src="/img/scroll@2x.png" alt=""></h1>
+    <div id='fullpage'>
+
+        <div class="section section-main">
+            <img class='dang' src="img/dang.png" alt="">
+
+            <img class='rdbtn' src="./img/rider-button-pc@2x.png" alt="">
+            <div>
+                <h4 class='download'>앱스토어 다운로드</h4>
+                <ul class='store'>
+                    <li><button class='appstore'></button></li>
+                    <li><button class='google'></button></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class='qrtxt'>QR코드 다운로드</h4>
+                <li class='qr-back'><button class='qr'></button></li>
+            </div>
+        </div>
+        <div class="section section1"><div class='road'></div><img src="img/s1.png" alt="" class='txtimg'>
+            <p>3천만 이상이 선택한 배달의 민족, <br>업계 최다 배달가능 업소 보유 중!</p>
+            <span>(2017년 11월 기준)</span>
+            <img src="/img/s1 bike@2x.png" alt="" class='subimg bike'>
+        </div>
+
+        <div class="section section2"><img src="img/s2.png" alt="" class='txtimg'>
+            <p>배달이 안되던 동네 맛집까지 ~<br>배민라이더스가 직접 배달해드립니다.</p>
+            <span>서울 전지역, 경기 및 광역시 일부 지역에서<br>서비스 이용 가능!</span><img src="./img/s2 people@2x.png" alt="" class='subimg people'>
+        </div>
+
+        <div class="section section3"><img src="img/s3.png" alt="" class='txtimg'>
+            <p>지금 밥 한끼 보내주고 싶은 분께<br>배민 상품권을 선물하세요</p><img src="./img/s3 present@2x.png" alt="" class='subimg present'>
+        </div>
+
+        <div class="section section4"><img src="img/s4.png" alt="" class='txtimg'>
+            <p>궁금한 맛은 직접 물어보고, 구경하는 재미<br>이제 배민에서 생생하게 경험하세요!</p>
+            <img src="./img/s4 shoppinglive_re.png" alt="" class='subimg shopping'>
+        </div>
+        <div class="section section5"><img src="img/s5.png" alt="" class='txtimg'>
+            <p>마트까지 가지 않아도, 기다리지 않아도<br>
+                주문하신 상품을 바로 배달해드립니다.</p><span>서울, 인천 및 경기 일부 지역에서<br>서비스 이용 가능!</span><img
+                src="./img/s5 bmart_rider@2x.png" alt="" class='subimg bmart'>
+        </div>
+        <div class="section section5"><img src="img/s6.png" alt="" class='txtimg'>
+            <p>배민페이, 네이버페이 등은 물론<br>각종 신용카드까지 결제 가능!</p><img src="./img/s6 flag@2x.png" alt="" class='subimg flag'>
+        </div>
+        <div class="section section-footer">
+            
+        </div>
+    </div>
+    <div id='menuBar'>
+        <ul id='gnb'>
+            <li><a href="#section-main"></a></li>
+            <li data-menuanchor="section1" class='active'><a href="#section1"><!-- <img src="/img/dotSelect@2x.png"
+                        alt=""> --></a>
+            </li>
+            <li data-menuanchor="section2"><a href="#section2"><!-- <img src="/img/dotScroll02@2x.png" alt=""> --></a></li>
+            <li data-menuanchor="section3"><a href="#section3"><!-- <img src="/img/dotScroll02@2x.png" alt=""> --></a></li>
+            <li data-menuanchor="section4"><a href="#section4"><!-- <img src="/img/dotScroll02@2x.png" alt=""> --></a></li>
+            <li data-menuanchor="section5"><a href="#section5"><!-- <img src="/img/dotScroll02@2x.png" alt=""> --></a></li>
+            <li data-menuanchor="section6"><a href="#section6"><!-- <img src="/img/dotScroll02@2x.png" alt=""> --></a></li>
+            <li><a href="section-footer"></a></li>
+        </ul>
+    </div>
+    <script>
+        const list = document.querySelectorAll('.gnb li')
+        const img = document.querySelectorAll('.section li img')
+        const bike = document.querySelector('.bike')
+        const people = document.querySelector('.people')
+        const present = document.querySelector('.present')
+        const shopping = document.querySelector('.shopping')
+        const flag = document.querySelector('.flag')
+        const bmart = document.querySelector('.bmart')
+
+        const app = document.querySelector('.app')
+        const menubar = document.querySelector('#gnb')
+        
+
+        new fullpage('#fullpage', {
+            licenseKey: 'OPEN-SOURCE-GPLv3-LICENSE ',
+            anchors: ['section-main', 'section1', 'section2', 'section3', 'section4', 'section5', 'section6','section-footer'],
+            menu: '#gnb',
+            autoScrolling: true,
+            scrollHorizontally: true,
+            afterLoad : function(origin, destination, direction, trigger){
+                let num = destination.index
+                if(num==0){
+                    app.classList.add('off')
+                    menubar.classList.add('off')
+                }
+                else if(num==1){
+                    bike.classList.add('on')
+                    app.classList.remove('off')
+                    menubar.classList.remove('off')
+                }
+                else if(num==2){
+                    people.classList.add('on')
+                }
+                else if(num==3){
+                    present.classList.add('on')
+                }
+                else if(num==4){
+                    shopping.classList.add('on')
+                }
+                else if(num==5){
+                    bmart.classList.add('on')
+                }
+                else if(num==6){
+                    flag.classList.add('on')
+                }
+            
+            
+            },
+            
+
+        });
+    </script>
+</body>
+
+</html>
